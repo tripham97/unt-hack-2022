@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "TravelSpace",
+    "description": "Add a custom background to your browser",
+    "version": "1.0",
+    "icons":{
+        "16": "/images/solar-systemx16.png",
+        "32": "/images/solar-systemx32.png",
+        "256": "/images/solar-system.png"
+    },
+    "background":{
+        "css": ["main.css"]
+    },
+    "action": {
+        "default_icon": {
+            "16": "/images/earthx16.png",
+            "32": "/images/earthx32.png",
+            "256": "/images/earth.png"
+    },
+    "content_scripts": [{
+                "matches": ["http://google.com/*"],
+                "css": ["main.css"]
+            }
+        ]
+    }
+}
